@@ -25,30 +25,8 @@ version: '3.7'
 <br>
 services:
 
-elasticsearch:
-    image: docker.elastic.co/elasticsearch/elasticsearch:7.7.0
-    ports:
-      - "9200:9200"
-      - "9300:9300"
-    environment:
-      discovery.type: "single-node"
-      ES_JAVA_OPTS: "-Xms2g -Xmx2g"
-      xpack.monitoring.enabled: "true"
-    volumes:
-      - ./esdata:/usr/share/elasticsearch/data
-      
-  kibana:
-    image: docker.elastic.co/kibana/kibana:7.7.0
-    ports:
-      - "5601:5601"
-    environment:
-      ELASTICSEARCH_URL: http://elasticsearch:9200
-    depends_on:
-      - elasticsearch
-      
-volumes:
-  esdata:
-    driver: local
+![image](https://github.com/LeoAquino54/ElasKibanaDocker/assets/99769679/fd1a3012-a332-49fe-84ca-e0e15242229f)
+
 
 <br> 
 docker -compose up
