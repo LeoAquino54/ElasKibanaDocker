@@ -15,16 +15,17 @@ Elasticsearch e Kibana no Docker
 2- docker run - link {Container ID do Elasticsearch}:elasticsearch -p 5601:5601 docker.elastic.co/kibana/kibana:7.7.0
 <br>
 <br>
-- <h2></h2>http://localhost:9200</h2>
--<h2>http://localhost:5601</h2>
+-http://localhost:9200
+-http://localhost:5601
 <br>
 <br>
 <h1>Docker Compose</h1>
 <br>
 version: '3.7'
+<br>
 services:
 
-  elasticsearch:
+elasticsearch:
     image: docker.elastic.co/elasticsearch/elasticsearch:7.7.0
     ports:
       - "9200:9200"
