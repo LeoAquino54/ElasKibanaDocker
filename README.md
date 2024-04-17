@@ -19,7 +19,7 @@ Elasticsearch e Kibana no Docker
 -http://localhost:5601
 <br>
 <br>
-<h1>Docker Compose</h1>
+<h3>Docker Compose</h3>
 <br>
 version: '3.7'
 <br>
